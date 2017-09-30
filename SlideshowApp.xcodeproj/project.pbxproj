@@ -13,6 +13,9 @@
 		45C6BFE91F7F16C30020F53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C6BFE81F7F16C30020F53F /* Assets.xcassets */; };
 		45C6BFEC1F7F16C30020F53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C6BFEA1F7F16C30020F53F /* LaunchScreen.storyboard */; };
 		45C6BFF41F7F1EE80020F53F /* ScopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C6BFF31F7F1EE80020F53F /* ScopeViewController.swift */; };
+		45C6BFF61F7F303F0020F53F /* syageki_shooting_beam_rifle.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C6BFF51F7F303F0020F53F /* syageki_shooting_beam_rifle.png */; };
+		45C6BFF81F7F30530020F53F /* syageki_shooting_clay.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C6BFF71F7F30530020F53F /* syageki_shooting_clay.png */; };
+		45C6BFFA1F7F305C0020F53F /* sports_polo.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C6BFF91F7F305C0020F53F /* sports_polo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		45C6BFEB1F7F16C30020F53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45C6BFED1F7F16C30020F53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45C6BFF31F7F1EE80020F53F /* ScopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeViewController.swift; sourceTree = "<group>"; };
+		45C6BFF51F7F303F0020F53F /* syageki_shooting_beam_rifle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syageki_shooting_beam_rifle.png; sourceTree = "<group>"; };
+		45C6BFF71F7F30530020F53F /* syageki_shooting_clay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syageki_shooting_clay.png; sourceTree = "<group>"; };
+		45C6BFF91F7F305C0020F53F /* sports_polo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports_polo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			children = (
 				45C6BFE11F7F16C30020F53F /* AppDelegate.swift */,
 				45C6BFE31F7F16C30020F53F /* ViewController.swift */,
+				45C6BFF51F7F303F0020F53F /* syageki_shooting_beam_rifle.png */,
+				45C6BFF91F7F305C0020F53F /* sports_polo.png */,
+				45C6BFF71F7F30530020F53F /* syageki_shooting_clay.png */,
 				45C6BFE51F7F16C30020F53F /* Main.storyboard */,
 				45C6BFF31F7F1EE80020F53F /* ScopeViewController.swift */,
 				45C6BFE81F7F16C30020F53F /* Assets.xcassets */,
@@ -126,8 +135,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C6BFFA1F7F305C0020F53F /* sports_polo.png in Resources */,
 				45C6BFEC1F7F16C30020F53F /* LaunchScreen.storyboard in Resources */,
 				45C6BFE91F7F16C30020F53F /* Assets.xcassets in Resources */,
+				45C6BFF81F7F30530020F53F /* syageki_shooting_clay.png in Resources */,
+				45C6BFF61F7F303F0020F53F /* syageki_shooting_beam_rifle.png in Resources */,
 				45C6BFE71F7F16C30020F53F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
