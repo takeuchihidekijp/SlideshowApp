@@ -12,6 +12,7 @@
 		45C6BFE71F7F16C30020F53F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C6BFE51F7F16C30020F53F /* Main.storyboard */; };
 		45C6BFE91F7F16C30020F53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C6BFE81F7F16C30020F53F /* Assets.xcassets */; };
 		45C6BFEC1F7F16C30020F53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C6BFEA1F7F16C30020F53F /* LaunchScreen.storyboard */; };
+		45C6BFF41F7F1EE80020F53F /* ScopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C6BFF31F7F1EE80020F53F /* ScopeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		45C6BFE81F7F16C30020F53F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45C6BFEB1F7F16C30020F53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45C6BFED1F7F16C30020F53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45C6BFF31F7F1EE80020F53F /* ScopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				45C6BFE11F7F16C30020F53F /* AppDelegate.swift */,
 				45C6BFE31F7F16C30020F53F /* ViewController.swift */,
 				45C6BFE51F7F16C30020F53F /* Main.storyboard */,
+				45C6BFF31F7F1EE80020F53F /* ScopeViewController.swift */,
 				45C6BFE81F7F16C30020F53F /* Assets.xcassets */,
 				45C6BFEA1F7F16C30020F53F /* LaunchScreen.storyboard */,
 				45C6BFED1F7F16C30020F53F /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C6BFF41F7F1EE80020F53F /* ScopeViewController.swift in Sources */,
 				45C6BFE41F7F16C30020F53F /* ViewController.swift in Sources */,
 				45C6BFE21F7F16C30020F53F /* AppDelegate.swift in Sources */,
 			);
