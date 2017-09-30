@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBAction func onTapImage(_ sender: Any) {
+        performSegue(withIdentifier: "scope", sender: <#T##Any?#>)
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue){
@@ -21,6 +22,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let image = UIImage(named: "sports_polo")
+        
+        imageView.image = image
     }
 
     override func didReceiveMemoryWarning() {
