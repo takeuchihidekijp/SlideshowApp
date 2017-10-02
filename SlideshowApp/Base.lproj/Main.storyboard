@@ -29,14 +29,6 @@
                                     <action selector="startShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JfJ-me-TVj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI3-oh-VPQ">
-                                <rect key="frame" x="159" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <action selector="backShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeY-bG-Hyr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adl-d3-ZAd">
                                 <rect key="frame" x="238" y="318" width="79" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -53,10 +45,20 @@
                                     <outletCollection property="gestureRecognizers" destination="VY7-v0-OGf" appends="YES" id="rn4-Dx-yvG"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI3-oh-VPQ">
+                                <rect key="frame" x="168" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="backShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeY-bG-Hyr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="backbtn" destination="sI3-oh-VPQ" id="AMm-vb-6AM"/>
+                        <outlet property="go_btn" destination="BPn-8i-6sW" id="tpC-xC-feV"/>
                         <outlet property="imageView" destination="3YA-Eu-QjN" id="YhX-jk-Vji"/>
                         <segue destination="Fil-tI-7cE" kind="show" identifier="scope" id="JMd-pF-6g7"/>
                     </connections>

@@ -10,10 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //進むボタン
+    @IBOutlet weak var go_btn: UIButton!
+    
     var timer: Timer!
     var ImageNo = 0
     
 
+    @IBOutlet weak var backbtn: UIButton!
     @IBAction func startShow(_ sender: Any) {
         
         // 表示している画像の番号を1増やす
@@ -34,9 +38,15 @@ class ViewController: UIViewController {
         if self.timer == nil {
            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
             
+            go_btn.isEnabled = false
+            backbtn.isEnabled = false
+            
         }else{
             self.timer.invalidate()
             self.timer = nil
+            
+            go_btn.isEnabled = true
+            backbtn.isEnabled = true
         }
         
     }
