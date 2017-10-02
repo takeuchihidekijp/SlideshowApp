@@ -9,11 +9,25 @@
 import UIKit
 
 class ScopeViewController: UIViewController {
+    
+    // 受け取るためのプロパティ（変数）を宣言しておく
+    var No:Int = 0
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let images = ["syageki_shooting_beam_rifle","sports_polo","syageki_shooting_clay"]
+        
+        let name = images[No]
+        
+        // 画像を読み込み
+        let image = UIImage(named: name)
+        
+        // Image Viewに読み込んだ画像をセット
+       imageView.image = image
     }
 
     override func didReceiveMemoryWarning() {
