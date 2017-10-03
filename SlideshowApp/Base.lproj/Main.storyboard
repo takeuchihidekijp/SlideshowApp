@@ -35,6 +35,7 @@
                                 <state key="normal" title="再生/停止"/>
                                 <connections>
                                     <action selector="slideShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="97H-Sk-vcT"/>
+                                    <action selector="startShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Mm-Wy-q0P"/>
                                 </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3YA-Eu-QjN">
@@ -60,6 +61,7 @@
                         <outlet property="backbtn" destination="sI3-oh-VPQ" id="AMm-vb-6AM"/>
                         <outlet property="go_btn" destination="BPn-8i-6sW" id="tpC-xC-feV"/>
                         <outlet property="imageView" destination="3YA-Eu-QjN" id="YhX-jk-Vji"/>
+                        <outlet property="slide" destination="adl-d3-ZAd" id="FJV-RC-xYr"/>
                         <segue destination="Fil-tI-7cE" kind="show" identifier="scope" id="JMd-pF-6g7"/>
                     </connections>
                 </viewController>

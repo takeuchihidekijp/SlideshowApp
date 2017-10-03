@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
 
     @IBOutlet weak var backbtn: UIButton!
+    @IBOutlet weak var slide: UIButton!
     @IBAction func startShow(_ sender: Any) {
         
         // 表示している画像の番号を1増やす
@@ -40,6 +41,9 @@ class ViewController: UIViewController {
             
             go_btn.isEnabled = false
             backbtn.isEnabled = false
+
+            
+            slide.setTitle("停止", for: .normal)
             
         }else{
             self.timer.invalidate()
@@ -47,6 +51,9 @@ class ViewController: UIViewController {
             
             go_btn.isEnabled = true
             backbtn.isEnabled = true
+            
+            slide.setTitle("再生", for: .normal)
+
         }
         
     }
