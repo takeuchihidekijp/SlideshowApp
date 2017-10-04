@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     var timer: Timer!
     var ImageNo = 0
-    
+    var SeniFlg = 0 //遷移前が０　遷移したら1
 
     @IBOutlet weak var backbtn: UIButton!
     @IBOutlet weak var slide: UIButton!
@@ -72,6 +72,7 @@ class ViewController: UIViewController {
         self.timer = nil
         }
         
+        SeniFlg = 1
         // segueから遷移先のResultViewControllerを取得する
         let scopeViewController:ScopeViewController = segue.destination as! ScopeViewController
         
@@ -108,8 +109,9 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         //検証中
         if self.timer != nil {
+            if SeniFlg == 1{
+            }
             
-            slide.setTitle("再生", for: .normal)
         }
 
     }
