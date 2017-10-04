@@ -65,6 +65,13 @@ class ViewController: UIViewController {
     
     // Segue 準備
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        //遷移前にタイマーをストップさせる
+        
+    if self.timer != nil {
+        self.timer.invalidate()
+        self.timer = nil
+        }
+        
         // segueから遷移先のResultViewControllerを取得する
         let scopeViewController:ScopeViewController = segue.destination as! ScopeViewController
         
@@ -97,6 +104,16 @@ class ViewController: UIViewController {
         displayImage()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //検証中
+        if self.timer != nil {
+            
+            slide.setTitle("再生", for: .normal)
+        }
+
+    }
+    
     func  displayImage() {
         let images = ["syageki_shooting_beam_rifle","sports_polo","syageki_shooting_clay"]
         
@@ -122,6 +139,6 @@ class ViewController: UIViewController {
         imageView.image = image
         
     }
-
+    
 }
 
